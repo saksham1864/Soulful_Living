@@ -1,0 +1,160 @@
+.container {
+    padding: 0 2rem;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    /* border-bottom: 1px solid #eaeaea; */
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #426B1F;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav a {
+    margin: 0 1rem;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .profileButton {
+    background-color: #426B1F;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .profileButton:hover {
+    background-color: #426B1F;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .title i {
+    font-style: italic;
+  }
+  
+  .browseButton {
+    background-color: #426B1F;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .browseButton:hover {
+    background-color: #426B1F;
+  }
+  
+  @media (max-width: 600px) {
+    .nav {
+      display: none; /* Hide desktop navigation links on small screens */
+    }
+  
+    .nav.showNav {
+      display: flex; /* Show when showNav state is true */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust as needed */
+      left: 0;
+      background-color: #f9f9f9;
+      width: 100%;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+  
+    .nav.showNav a {
+      margin: 10px 0;
+    }
+  
+    .hamburgerButton {
+      display: block; /* Show the hamburger menu button on smaller screens */
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+  
+    .hamburgerIcon {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #426B1F;
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+  
+    .hamburgerIcon:before,
+    .hamburgerIcon:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #426B1F;
+      transition: transform 0.3s ease;
+    }
+  
+    .hamburgerIcon:before {
+      top: -8px;
+    }
+  
+    .hamburgerIcon:after {
+      top: 8px;
+    }
+  
+    .hamburgerButton.active .hamburgerIcon {
+      background-color: transparent;
+    }
+  
+    .hamburgerButton.active .hamburgerIcon:before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+  
+    .hamburgerButton.active .hamburgerIcon:after {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+  }
+  
+  .ind{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+
+.bold{
+    font-weight: 500;
+}
+
+.end{
+    text-align: end;
+}
