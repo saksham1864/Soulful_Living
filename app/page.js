@@ -31,7 +31,7 @@ export default function Home() {
         <h1 className={`${styles.title} ${styles.bold}`}>Documenting the pursuit of <i className={styles.ind}>learning</i> and <i className={styles.ind}>growth</i>.</h1>
         <button className={styles.browseButton}>Browse our Blogs</button>
       </main>
-      <div className=' p-4  text-end'>  All rights reserved |  Made with ♥ by <a href='https://github.com/saksham1864'><u>saksham</u></a>   </div>
+      <div className=' p-4  text-end'>  All rights reserved |  Made  by <a href='https://github.com/saksham1864'><u>saksham</u></a>   </div>
     </div>
   );
 }
